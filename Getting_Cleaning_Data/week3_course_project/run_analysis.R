@@ -30,7 +30,7 @@ names(joinLabel) <- "ACTIVITY"
 
 # Step4. Appropriately labels the data set with descriptive activity
 # names.
-names(joinSubject) <- "SUBJECT"
+names(joinSubject) <- "SUBJECT_ID"
 joinData <- cbind(joinSubject, joinLabel, joinData)
 
 write.table(joinData, "merged_data.txt") # write out the 1st dataset
@@ -43,6 +43,6 @@ library(reshape2)
 melt_data <- melt(joinData, id = colnames(joinData)[1:2], 
                   measure.vars = colnames(joinData)[3:ncol(joinData)])
 
-data_with_means = dcast(melt_data, SUBJECT + ACTIVITY ~ variable, mean)
+data_with_means = dcast(melt_data, SUBJECT_ID + ACTIVITY ~ variable, mean)
 
 write.table(data_with_means, "data_with_means.txt") # write out the 2nd dataset

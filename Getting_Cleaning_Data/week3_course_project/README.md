@@ -38,6 +38,7 @@ Steps to make this work
 -----------------------
 * First, unzip the data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and rename the folder with "data".
 * Make sure the folder "data" and the run_analysis.R script are both in the current working directory.
+* You will require reshape2 package, if not installed, then install using install.packages("reshape2").
 * Second, use source("run_analysis.R") command in RStudio. 
 * Third, you will find two output files are generated in the current working directory:
   - merged_data.txt (9.45 Mb): it contains a data frame called cleanedData with 10299*81 dimension.
