@@ -3,8 +3,8 @@ Coursera "Getting and Cleaning Data" Peer Assessment
 
 Scripts and data for the peer assessment in the coursera course "Getting and Cleaning Data".
 
-Task given
-----------
+Problem Statement
+-----------------
 The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. You will be graded by your peers on a series of yes/no questions related to the project. You will be required to submit: 1) a tidy data set as described below, 2) a link to a Github repository with your script for performing the analysis, and 3) a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md. You should also include a README.md in the repo with your scripts. This repo explains how all of the scripts work and how they are connected.
 
 You should create one R script called run_analysis.R that does the following.  
@@ -44,3 +44,6 @@ Steps to make this work
   - merged_data.txt (9.45 Mb): it contains a data frame called cleanedData with 10299*81 dimension.
   - data_with_means.txt (262 Kb): it contains a data frame called result with 180*81 dimension.
 * Finally, use data <- read.table("data_with_means.txt") command in RStudio to read the file. Since we are required to get the average of each variable for each activity and each subject, and there are 6 activities in total and 30 subjects in total, we have 180 rows with all combinations for each of the 79 features. 
+
+##Libraries you need to install
+* reshape2
