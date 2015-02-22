@@ -1,3 +1,6 @@
+library(ggplot2)
+library(plyr)
+
 # Check if both data exist in the environment. If not, load the data.
 if (!"neiData" %in% ls()) {
     neiData <- readRDS("./data/summarySCC_PM25.rds")

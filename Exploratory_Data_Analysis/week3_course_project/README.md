@@ -1,4 +1,4 @@
-My [Coursera-Exploratory-Data-Analysis](https://github.com/soumya-ghosh/datasciencecoursera/tree/master/Exploratory_Data_Analysis) Repo  
+My [Coursera-Exploratory-Data-Analysis](https://github.com/soumya-ghosh/datasciencecoursera/tree/master/Exploratory_Data_Analysis/week3_course_project) Repo  
 
 ### Introduction
 
